@@ -7,7 +7,7 @@ function App() {
   const [bulbState, setBulbState] = useState('OFF'); // Initial state of the bulb
 
   useEffect(() => {
-    wsRef.current = new WebSocket('wss://week8-ws.onrender.com'); // Replace with your server URL
+    wsRef.current = new WebSocket('wss://led-toggle-websocket.onrender.com'); // Replace with your server URL
     setWs(wsRef.current);
   }, []);
 
